@@ -30,7 +30,7 @@
          <div class="album d-flex justify-content-start flex-wrap">
            <?php foreach ($albums as $album) { ?>
              <div class="card m-3" style="width: 14rem;">
-               <img src="<?php echo $album['poster']; ?>" class="card-img-top" alt="...">
+               <img src="<?php echo $album['poster']; ?>" class="card-img-top" alt="album cover">
                <div class="card-body">
                  <h5 class="card-title"><?php echo $album['title'];  ?></h5>
                  <h6 class="card-subtitle mb-2 text-muted"><?php echo $album['author'];  ?></h6>
@@ -49,14 +49,14 @@
        <!-- Album JS section -->
        <section class="container" id="app">
          <div class="album d-flex justify-content-start flex-wrap">
-             <div class="card m-3" style="width: 14rem;">
-               <img src="" class="card-img-top" alt="...">
+             <div v-for='album in albumList' class="card m-3" style="width: 14rem;">
+               <img :src="album.poster" class="card-img-top" alt="album cover">
                <div class="card-body">
-                 <h5 class="card-title">Title</h5>
-                 <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                 <h5 class="card-title">{{album.title}}</h5>
+                 <h6 class="card-subtitle mb-2 text-muted">{{album.author}}</h6>
                   <div class="album_details mt-3">
-                    <span>Year</span>
-                    <span>Genre</span>
+                    <span>{{album.year}}</span>
+                    <span>{{album.genre}}</span>
                   </div> 
                 </div>
             </div>
