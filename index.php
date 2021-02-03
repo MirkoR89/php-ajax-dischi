@@ -25,7 +25,7 @@
 
      <!-- Main site -->
      <main>
-       <!-- Album section -->
+       <!-- Album PHP section -->
        <section class="container">
          <div class="album d-flex justify-content-start flex-wrap">
            <?php foreach ($albums as $album) { ?>
@@ -43,6 +43,31 @@
           <?php } ?>
          </div>
        </section>
+
+       <hr>
+
+       <!-- Album JS section -->
+       <section class="container" id="app">
+         <div class="album d-flex justify-content-start flex-wrap">
+             <div class="card m-3" style="width: 14rem;">
+               <img src="" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Title</h5>
+                 <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                  <div class="album_details mt-3">
+                    <span>Year</span>
+                    <span>Genre</span>
+                  </div> 
+                </div>
+            </div>
+         </div>
+       </section>
      </main>
+     <!-- Axios CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+     <!-- Vue CND -->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+     <!-- Link file JS -->
+     <script src="dist/js/app.js" charset="utf-8"></script>
    </body>
  </html>
