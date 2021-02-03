@@ -1,0 +1,22 @@
+body {
+  background-color: #37474f;
+  
+  header {
+    background-color: #102027;
+  }
+
+  main {
+    .card {
+      background-color: #eceff1;
+
+      h5 {
+        color: #212121; 
+      }
+
+      span {
+        color: #212121;
+        font-weight: normal;
+      }
+    }
+  }
+}
